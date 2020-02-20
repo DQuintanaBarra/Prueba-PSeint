@@ -1,0 +1,306 @@
+Algoritmo prueba
+	
+	
+	
+	definir num, n1, n2, n3, dig, n como entero
+	definir sexo, banio, nombre, op Como Caracter
+	
+	
+ 	cant<-1
+	suma<-0
+	
+	
+	
+	Escribir "Bienvenido a nuestro menu de funciones"
+	
+	esperar 2 Segundos
+	repetir
+	Limpiar Pantalla
+	escribir "Elija una de las siguientes opciones"
+	escribir "1- Secuencial"
+	escribir "2- Condicional Si-Entonces"
+	escribir "3- Condicional si-entonces anidado"
+	escribir "4- Condicional segun"
+	escribir "5- Repetitiva mientras"
+	escribir "6- Repetitiva repetir"
+	escribir "7- Repetitiva Para"
+	escribir "8- Arreglo simple"
+	escribir "9- Arreglo Bidimensional"
+	escribir "10- Salir"
+	Leer num
+	
+	cant<-0
+	suma<-0
+	
+	segun num hacer
+		1: Limpiar Pantalla
+			escribir "A continuacion se le pediran 3 numeros para ser promediados"
+			escribir "Numero 1"
+			leer n1
+			Limpiar Pantalla
+			escribir "Numero 2"
+			leer n2
+			Limpiar Pantalla
+			escribir "Numero 3"
+			leer n3
+			Limpiar Pantalla
+			escribir "Su promedio es ", n1/3 + n2/3 + n3/3
+			escribir "En 5 segundos sera enviado al menu"
+			Esperar 5 segundos
+			
+		2: Limpiar Pantalla
+			Escribir "Para saber a que baño debe acceder, por favor conteste lo siguiente"
+			escribir "Escriba su nombre"
+			Leer nombre
+			Limpiar Pantalla
+			Escribir "Es Usted de sexo Masculino o Femenino?"
+			leer sexo
+			Limpiar Pantalla
+			si sexo= "masculino" o sexo= "Masculino" o sexo= "MASCULINO" entonces
+				escribir nombre, " Usted debe ingresar al baño masculino"
+				escribir "En 5 segundos sera enviado al menu"
+				Esperar 5 segundos
+			FinSi
+			
+			si sexo= "femenino" o sexo="Femenino" o sexo= "FEMENINO" entonces
+				escribir nombre, " Usted debe ingresar al baño femenino"
+				escribir "En 5 segundos sera enviado al menu"
+				Esperar 5 segundos
+			FinSi
+			
+			Si sexo<> "masculino" y sexo <> "femenino" y sexo<> "Masculino" y sexo<>"MASCULINO" y sexo<>"Femenino" y sexo<>"FEMENINO" entonces
+				escribir "Intente nuevamente escribiendo correctamente lo que se le pida"
+				escribir "En 5 segundos sera enviado al menu"
+				Esperar 5 segundos
+				
+			FinSi
+			
+		3: Limpiar Pantalla
+			Escribir "***RECOMENDAMOS QUE USE SU TECLADO EN ESPAÑOL***"
+			escribir "************************************************"
+			escribir "A continuacion, se le pedira datos y sus intereses respecto a nuestros servicios"
+			escribir "Si ingresa un texto invalido, sera redireccionado al menu"
+			escribir "Escriba su nombre"
+			leer nombre
+			Limpiar Pantalla
+			escribir "Escriba su sexo masculino o femenino"
+			leer sexo
+			Limpiar Pantalla
+			si sexo="masculino" o sexo= "Masculino" o sexo= "MASCULINO" entonces
+				escribir "desea usar el baño o la ducha?"
+				leer banio
+				si banio= "baño" o banio="Baño" o banio="BAÑO" entonces
+					Limpiar Pantalla
+					escribir nombre," Usted debera ingresar al baño masculino con una cuota de $250 pesos"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				FinSi
+				si banio= "ducha" o banio="Ducha" o banio="DUCHA" Entonces
+					Limpiar Pantalla
+					escribir nombre," Usted debera ingresar al baño masculino con una cuota de $2500 pesos"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				
+				FinSi
+			SiNo
+				si sexo="femenino" o sexo="Femenino" o sexo="FEMENINO" entonces
+					escribir "desea usar el baño o la ducha?"
+					leer banio
+					si banio= "baño" o banio="Baño" o banio="BAÑO" entonces
+						Limpiar Pantalla
+						Escribir nombre, " Usted debera ingresar al baño femenino con una cuota de $250 pesos"
+						escribir "En 5 segundos sera enviado al menu"
+						Esperar 5 segundos
+					FinSi
+					si banio= "ducha" o banio="Ducha" o banio="DUCHA" Entonces
+						Limpiar Pantalla
+						escribir nombre, " Usted debera ingresar al baño femenino con una cuota de $2500 pesos"
+						escribir "En 5 segundos sera enviado al menu"
+						Esperar 5 segundos
+					
+					FinSi
+					si banio <>"baño" y banio<>"Baño" y banio<>"BAÑO" y banio<>"ducha" y banio<>"Ducha" y banio<>"DUCHA" Entonces
+						Limpiar Pantalla
+						escribir "Ingrese una opcion valida"
+						escribir "en 3 segundos sera redireccionado al menu"
+						esperar 3 segundos
+					FinSi
+				
+				FinSi
+				
+			FinSi
+			si sexo<>"masculino" y sexo<>"Masculino" y sexo<>"MASCULINO" y sexo<>"femenino" y sexo<>"Femenino" y sexo<>"FEMENINO" Entonces
+				
+				Limpiar Pantalla
+				escribir "Ingrese una opcion valida"
+				escribir "En 3 segundos sera redireccionado al menu"
+				esperar 3 segundos
+			FinSi
+			
+			
+		4:	Limpiar Pantalla
+			Escribir "Ingrese un numero del 1 al 10, y sera escrito en palabras"
+			leer dig
+			Limpiar Pantalla
+			segun dig hacer
+				1: escribir "Uno"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				2: escribir "Dos"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				3: escribir "Tres"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				4: escribir "Cuatro"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				5: escribir "Cinco"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				6: escribir "Seis"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				7: escribir "Siete"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				8: escribir "Ocho"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				9: escribir "Nueve"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+				10: escribir "Diez"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos	
+				De Otro Modo:
+					escribir "ingrese un numero valido"
+					escribir "En 5 segundos sera enviado al menu"
+					Esperar 5 segundos
+			FinSegun
+			
+		5: Limpiar Pantalla
+			escribir "Usted ingresara la cantidad de numeros que quiera para ser promediados"
+			escribir "En cuanto el numero que inrgese sea igual a 0, se dara por finalizado y se dara su promedio"
+			escribir "Presione una tecla para continuar"
+			Esperar Tecla
+			
+			mientras num<>0 hacer
+				Limpiar Pantalla
+				escribir "escriba el siguiente numero"
+				leer num
+				
+				cant<-cant + 1
+				suma<-suma+num
+				
+			FinMientras 
+			
+			Limpiar Pantalla
+			escribir "El promedio de los numeros que digito es ", suma/(cant-1)
+			escribir "En 5 segundos sera enviado al menu"
+			Esperar 5 segundos
+			
+		6:	Limpiar Pantalla
+			escribir "Usted debera buscar el nombre correcto"
+			escribir "se sabe que el nombre comienza con la letra J"
+			
+			repetir
+				
+				escribir "escriba un nombre"
+				leer nombre
+				Limpiar Pantalla
+				cant<- cant+1
+				
+				
+			Hasta Que nombre= "juan" o nombre= "Juan" o nombre= "JUAN"
+			
+			escribir "Ha encontrado el nombre despues de ", cant, " intentos!"
+			escribir "En 5 segundos sera enviado al menu"
+			Esperar 5 segundos
+			
+		7:	Limpiar Pantalla
+			
+			tamanio<-10
+			
+			dimension n1[tamanio]<- a1
+			dimension n2[tamanio]<- a2
+			dimension n3[tamanio]<- a3
+			dimension n4[tamanio]<- a4
+			dimension n5[tamanio]<- a5
+			dimension n6[tamanio]<- a6
+			dimension n7[tamanio]<- a7
+			dimension n8[tamanio]<- a8
+			dimension n9[tamanio]<- a9
+			dimension n10[tamanio]<- a10
+			
+			
+			
+			//NO FUNCIONAL
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			escribir "En 5 segundos sera enviado al menu"
+			Esperar 5 segundos
+			
+		8:	Limpiar Pantalla
+			
+			
+			Escribir "A continuacion, usted debera escribir 5 nombres cuantas veces usted desee"
+			
+			
+			n<-5
+			dimension an[n]
+			Repetir
+				
+			Para n<-1 Hasta n Con Paso 1 Hacer
+				
+			escribir "escriba un nombre"	
+			
+			
+			
+			Fin Para
+			
+			Escribir "Desea escribir 5 nombres mas?"
+			hasta que op="no" o op="No" o op="NO"
+			
+			
+			//NO FUNCIONAL
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		9:	
+			
+			
+			
+			
+			
+		10:	limpiar pantalla
+			escribir "Gracias por probar, que tenga un buen dia"
+			
+			
+			
+			
+			
+		de otro modo: limpiar pantalla 
+			escribir "Digite un numero correcto"
+			esperar 2 segundos
+			
+    FinSegun
+	
+	
+hasta que num=10
+	
+FinAlgoritmo
